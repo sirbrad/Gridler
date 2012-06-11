@@ -17,9 +17,8 @@ html {
 }
 
 body {
-  background: url(../Images/Css/bg-body.png) left top repeat-x #cccccc;
+  background-color: #cccccc;
   margin: 0;
-  padding-top: 1em;
 }
 
 ::selection,
@@ -257,14 +256,25 @@ p, blockquote, ul, ol, dl, menu, pre {
   margin: 0 auto;
 }
 
-/* Component
+/* Gridler
    ========================================================================== */
-/* Modules
-   ========================================================================== */
-@media (min-width:480px) {
-  /* I don't like the idea of nested media queries due to the way sass outputs them.
-   * So my solution to have a Queries folder or have a duplicate file within
-   * the same directory but named with the min-width at the end of the file name.
-   * Example: Components/header - Components/header480
-  */
+.gridler {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.gridler > div {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.gridler__item {
+  background-color: rgba(102, 154, 170, 0.5);
+  float: left;
+  min-height: 100%;
+  width: 6.424%;
+}
+.gridler__item + .gridler__item {
+  margin-left: 2.083%;
 }
