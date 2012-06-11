@@ -1,5 +1,5 @@
 #!/bin/sh
 
-sass --watch --style expanded Assets/Styles/Sass:Assets/Styles
+sass --watch --style expanded assets/styles/sass:assets/styles
 
 exit 0
