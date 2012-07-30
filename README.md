@@ -1,1 +1,1 @@
-# A cool grid overlay for in browser design.
+Gave up on this for the time being :(
